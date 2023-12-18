@@ -1,0 +1,8 @@
+<section class="flex flex-col rounded-md border-white border-2 outline-black outline-1 p-2 m-2 {{color}}">
+    <h1 class="font-sans text-xl font-bold">{{nombre}}</h1>
+    <p class="text-justify">{{texto}}</p>
+        <button *ngIf="this.traduccion && this.texto == this.originalPerro; else original" class="text-blue-700 hover:underline self-end" (click)="traducirPerro()">Traducir</button>
+        <ng-template #original>
+            <button *ngIf="this.texto == this.traduccion" class="text-blue-700 hover:underline self-end" (click)="traducirPerro()">Original</button>
+        </ng-template>
+</section>
