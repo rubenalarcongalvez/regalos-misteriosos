@@ -7,10 +7,10 @@ import { HomeComponent } from './views/home/home.component';
 import { GiftComponent } from './views/gift/gift.component';
 import { NgModule } from '@angular/core';
 import { LondresDedicatoriasComponent } from './views/londres-dedicatorias/londres-dedicatorias.component';
-import { LondresLaExperienciaComponent } from './views/londres-la-experiencia/londres-la-experiencia.component';
 import { LondresLugaresComponent } from './views/londres-lugares/londres-lugares.component';
 import { LondresMapaComponent } from './views/londres-mapa/londres-mapa.component';
 import { LondresHomeComponent } from './views/londres-home/londres-home.component';
+import { LondresLaExperienciaComponent } from './views/experiencia/experiencia.component';
 
 const routes: Routes = [
     {

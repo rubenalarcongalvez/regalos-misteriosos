@@ -8,8 +8,8 @@ import { CardComponent } from 'src/app/shared/card/card.component';
   selector: 'app-londres-la-experiencia',
   standalone: true,
   imports: [LondresHeaderComponent, FooterComponent, CardComponent],
-  templateUrl: './londres-la-experiencia.component.html',
-  styleUrls: ['./londres-la-experiencia.component.css']
+  templateUrl: './experiencia.component.html',
+  styleUrls: ['./experiencia.component.css']
 })
 export class LondresLaExperienciaComponent {
 
