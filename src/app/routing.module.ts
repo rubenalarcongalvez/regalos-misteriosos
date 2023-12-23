@@ -6,6 +6,11 @@ import { PaisesComponent } from './views/paises/paises.component';
 import { HomeComponent } from './views/home/home.component';
 import { GiftComponent } from './views/gift/gift.component';
 import { NgModule } from '@angular/core';
+import { LondresDedicatoriasComponent } from './views/londres-dedicatorias/londres-dedicatorias.component';
+import { LondresLaExperienciaComponent } from './views/londres-la-experiencia/londres-la-experiencia.component';
+import { LondresLugaresComponent } from './views/londres-lugares/londres-lugares.component';
+import { LondresMapaComponent } from './views/londres-mapa/londres-mapa.component';
+import { LondresHomeComponent } from './views/londres-home/londres-home.component';
 
 const routes: Routes = [
     {
@@ -15,7 +20,15 @@ const routes: Routes = [
         path: 'home', component: HomeComponent
     },
     {
-        path: 'paises', component: PaisesComponent
+        path: 'paises', children: [
+            {path: '', component: PaisesComponent},
+            {path: 'londres/home', component: LondresHomeComponent},
+            {path: 'londres/mapa', component: LondresMapaComponent},
+            {path: 'londres/lugares', component: LondresLugaresComponent},
+            {path: 'londres/la-experiencia', component: LondresLaExperienciaComponent},
+            {path: 'londres/dedicatorias', component: LondresDedicatoriasComponent},
+            {path: '**', redirectTo: '/londres/home'},
+        ]
     },
     {
         path: 'municipios', component: MunicipiosComponent
